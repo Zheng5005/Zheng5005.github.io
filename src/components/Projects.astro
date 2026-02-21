@@ -12,6 +12,8 @@ import PostgreSQL from "./icons/PostgreSQL.astro"
 import MongoDB from "./icons/MongoDB.astro"
 import Cloudinary from "./icons/Cloudinary.astro"
 import SocketIO from "./icons/SocketIO.astro"
+import DaisyUI from "./icons/DaisyUI.astro"
+import JWT from "./icons/JWT.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 
@@ -28,12 +30,12 @@ const TAGS = {
   },
   REACT: {
     name: "React",
-    class: "bg-black text-white",
+    class: "bg-white text-black dark:bg-black dark:text-white",
     icon: React,
   },
   TAILWIND: {
     name: "TailwindCSS",
-    class: "bg-[#003159] text-white",
+    class: "bg-white text-black dark:bg-[#003159] dark:text-white",
     icon: Tailwind,
   },
   NESTJS: {
@@ -43,7 +45,7 @@ const TAGS = {
   },
   EXPRESJS: {
     name: "Expres.js",
-    class: "bg-[#003159] text-white",
+    class: "bg-white text-black dark:bg-black dark:text-white",
     icon: Expres,
   },
   GOLANG: {
@@ -53,7 +55,7 @@ const TAGS = {
   },
   NODEJS: {
     name: "NodeJS",
-    class: "bg-[#003159] text-white",
+    class: "bg-white text-black dark:bg-[#1f592f] dark:text-white",
     icon: NodeJS,
   },
   POSTGRESQL: {
@@ -63,18 +65,28 @@ const TAGS = {
   },
   MONGODB: {
     name: "MongoDB",
-    class: "bg-[#003159] text-white",
+    class: "bg-white text-black dark:bg-[#1f592f] dark:text-white",
     icon: MongoDB,
   },
   CLOUDINARY: { 
     name: "Cloudinary",
-    class: "bg-[#003159] text-white",
+    class: "bg-white text-black dark:bg-[#2d144f] dark:text-white",
     icon: Cloudinary,
   },
   SOCKETIO: { 
     name: "Socket.io",
-    class: "bg-[#003159] text-white",
+    class: "bg-white text-black dark:bg-black dark:text-white",
     icon: SocketIO,
+  },
+  DAISUI: { 
+    name: "DaisyUI",
+    class: "bg-[#003159] text-white",
+    icon: DaisyUI,
+  },
+  JWT: { 
+    name: "JWT",
+    class: "bg-white text-black dark:bg-black dark:text-white",
+    icon: JWT,
   },
 }
 const PROJECTS = [
@@ -93,8 +105,15 @@ const PROJECTS = [
       "A Whatsapp-like app with real time features, with Cloudinary integration to handle images uploading and Socket.io integrations to handle real-time comunication",
     link: "https://echoes-ekfs.onrender.com",
     image: "/projects/Echoes.png",
-    tags: [TAGS.MONGODB, TAGS.EXPRESJS, TAGS.REACT, TAGS.NODEJS, TAGS.TAILWIND, TAGS.CLOUDINARY, TAGS.SOCKETIO],
+    tags: [TAGS.MONGODB, TAGS.EXPRESJS, TAGS.REACT, TAGS.NODEJS, TAGS.TAILWIND, TAGS.CLOUDINARY, TAGS.SOCKETIO, TAGS.JWT],
   },
+  //{
+  //title: "Blendz - A language exchange app",
+  //description: "An app where you can find friends and learn another language, with getStream intregration to handle chat and video calls features",
+    //link: "",
+    //image: "",
+  //tags: [TAGS.GOLANG, TAGS.REACT, TAGS.TYPESCRIPT, TAGS.MONGODB, TAGS.TAILWIND, TAGS.DAISUI, TAGS.JWT]
+  //}
 ]
 ---
 
@@ -113,18 +132,18 @@ const PROJECTS = [
       {title}
     </h3>
     <div class="flex flex-wrap mt-2">
-      <ul class="flex flex-row mb-2 gap-x-2">
+      <ul class="flex flex-row flex-wrap mb-4 gap-2 sm:gap-x-2 sm:gap-y-1">
           {tags.map((tag) => (
             <li>
               <span
-                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}
               >
                 <tag.icon class="size-4" />
                 {tag.name}
               </span>
             </li>
           ))}
-        </ul>
+      </ul>
 
       <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
       <footer class="flex items-end justify-start mt-4 gap-x-4">
