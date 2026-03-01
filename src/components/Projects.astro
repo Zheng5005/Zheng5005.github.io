@@ -14,18 +14,19 @@ import Cloudinary from "./icons/Cloudinary.astro"
 import SocketIO from "./icons/SocketIO.astro"
 import DaisyUI from "./icons/DaisyUI.astro"
 import JWT from "./icons/JWT.astro"
+import Next from "./icons/Next.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 
 const TAGS = {
   JAVASCRIPT: {
     name: "JavaScript",
-    class: "bg-[#003159] text-white",
+    class: "bg-white dark:bg-[#E8D72A] text-black",
     icon: Javascript,
   },
   TYPESCRIPT: {
     name: "TypeScript",
-    class: "bg-[#003159] text-white",
+    class: "bg-white text-black dark:bg-black dark:text-white",
     icon: Typescript,
   },
   REACT: {
@@ -50,7 +51,7 @@ const TAGS = {
   },
   GOLANG: {
     name: "Golang",
-    class: "bg-[#003159] text-white",
+    class: "bg-white text-black dark:bg-black dark:text-white",
     icon: Golang,
   },
   NODEJS: {
@@ -80,13 +81,18 @@ const TAGS = {
   },
   DAISUI: { 
     name: "DaisyUI",
-    class: "bg-[#003159] text-white",
+    class: "bg-white text-black dark:bg-black dark:text-white",
     icon: DaisyUI,
   },
   JWT: { 
     name: "JWT",
     class: "bg-white text-black dark:bg-black dark:text-white",
     icon: JWT,
+  },
+  NEXT: { 
+    name: "Next",
+    class: "bg-white text-black dark:bg-black dark:text-white",
+    icon: Next,
   },
 }
 const PROJECTS = [
@@ -106,7 +112,7 @@ const PROJECTS = [
       "A Whatsapp-like app with real time features, with Cloudinary integration to handle images uploading and Socket.io integrations to handle real-time comunication",
     link: "https://echoes-ekfs.onrender.com",
     image: "/projects/Echoes.png",
-    tags: [TAGS.MONGODB, TAGS.EXPRESJS, TAGS.REACT, TAGS.NODEJS, TAGS.TAILWIND, TAGS.CLOUDINARY, TAGS.SOCKETIO, TAGS.JWT],
+    tags: [TAGS.MONGODB, TAGS.JAVASCRIPT, TAGS.EXPRESJS, TAGS.REACT, TAGS.NODEJS, TAGS.TAILWIND, TAGS.CLOUDINARY, TAGS.SOCKETIO, TAGS.JWT],
     github: "https://github.com/Zheng5005/Echoes"
   },
   {
