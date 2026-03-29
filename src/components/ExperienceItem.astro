@@ -33,7 +33,7 @@ const { title, company, description, link, date, dateKey, titleKey, descriptionK
     <span {...(descriptionKey ? {"data-i18n": descriptionKey} : {})}>{description}</span>
     {
       link && (
-        <LinkInline href={link}>
+        <LinkInline href={link} ariaLabel={`Learn more about ${company}`}>
           <span data-i18n="experienceItem.more">More</span>{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
