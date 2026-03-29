@@ -1,0 +1,61 @@
+{
+  "nav": {
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "aboutMe": "Sobre mí",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "badge": "Disponible para trabajar",
+    "greeting": "Hola, soy Fernando Gómez",
+    "description": "<strong>Ingeniero de sistemas</strong> de El Salvador 🇸🇻 al que le encanta convertir ideas en software real. Siempre estoy aprendiendo y adaptándome para mejorar mis soluciones.",
+    "contactMe": "Contáctame"
+  },
+  "sections": {
+    "workExperience": "Experiencia Laboral",
+    "projects": "Proyectos",
+    "aboutMe": "Sobre Mí"
+  },
+  "experience": {
+    "focusbear": {
+      "date": "Enero 2026 - Presente",
+      "title": "Ingeniero Frontend (Pasante)",
+      "description": "FocusBear es una app de productividad enfocada en el cumplimiento de hábitos y sesiones de enfoque, especialmente útil para personas neurodivergentes que quieren mantener su vida organizada."
+    },
+    "arreglitosv": {
+      "date": "Mayo 2025 - Dic 2025",
+      "title": "Ingeniero Frontend",
+      "description": "Arreglitosv es una app web donde los usuarios pueden encontrar flores de primera para cada ocasión, brindando una gran experiencia con su diseño responsive."
+    }
+  },
+  "projects": {
+    "echoes": {
+      "title": "Echoes - Una app de chat en tiempo real",
+      "description": "Una app estilo WhatsApp con funciones en tiempo real, con integración de Cloudinary para subir imágenes e integración de Socket.io para comunicación en tiempo real"
+    },
+    "blendz": {
+      "title": "Blendz - Una app de intercambio de idiomas",
+      "description": "Una app donde puedes encontrar amigos y aprender otro idioma, con integración de getStream para funciones de chat y videollamadas"
+    }
+  },
+  "projectActions": {
+    "code": "Código",
+    "preview": "Vista previa"
+  },
+  "aboutMe": {
+    "p1": "Mi nombre es Fernando Gómez. <strong>Soy ingeniero de sistemas</strong> y disfruto creando apps que marquen la diferencia, desde apps pequeñas pero poderosas hasta apps de nivel empresarial, estoy al 100%.",
+    "p2": "Una de mis historias de éxito se remonta a mis tiempos en la universidad, cuando mis amigos y yo <strong>creamos una mini-startup llamada SmartEnterprise.</strong> Colaboramos con varias tiendas locales para mejorar la experiencia de usuario e impulsar sus ventas.",
+    "p3": "A través de SmartEnterprise y otros proyectos, he adquirido <strong>amplia experiencia trabajando en equipos en diversas aplicaciones</strong>, siempre buscando entregar resultados de alta calidad y ser un buen compañero de equipo."
+  },
+  "footer": {
+    "aboutMe": "Sobre mí",
+    "contactMe": "Contáctame"
+  },
+  "experienceItem": {
+    "more": "Más"
+  },
+  "meta": {
+    "title": "Portafolio FerDevCraft - Ingeniero de Sistemas",
+    "description": "Contrata a FerDevCraft para crear tu aplicación"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "nav": {
+    "experience": "Experience",
+    "projects": "Projects",
+    "aboutMe": "About me",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Open to Work",
+    "greeting": "Hi, I'm Fernando Gómez",
+    "description": "<strong>Systems engineer</strong> from El Salvador 🇸🇻 who loves turning ideas into real software. I'm always learning and adapting to level up my solutions.",
+    "contactMe": "Contact me"
+  },
+  "sections": {
+    "workExperience": "Work Experience",
+    "projects": "Projects",
+    "aboutMe": "About Me"
+  },
+  "experience": {
+    "focusbear": {
+      "date": "January 2026 - Today",
+      "title": "Frontend Engineer Intern",
+      "description": "FocusBear is a productivity app focused on habit adherence and focus sessions, is specially useful for neurodivergent people that wants to keep their life in order."
+    },
+    "arreglitosv": {
+      "date": "May 2025 - Dec 2025",
+      "title": "Frontend Engineer",
+      "description": "Arreglitosv is a web app where users can find top-notch flowers for every ocations, providing users a great experience with its responsive design."
+    }
+  },
+  "projects": {
+    "echoes": {
+      "title": "Echoes - A real time chat app",
+      "description": "A Whatsapp-like app with real time features, with Cloudinary integration to handle images uploading and Socket.io integrations to handle real-time comunication"
+    },
+    "blendz": {
+      "title": "Blendz - A language exchange app",
+      "description": "An app where you can find friends and learn another language, with getStream intregration to handle chat and video calls features"
+    }
+  },
+  "projectActions": {
+    "code": "Code",
+    "preview": "Preview"
+  },
+  "aboutMe": {
+    "p1": "My name is Fernando Gómez. <strong>I'm a systems engineer</strong> who enjoys creating apps that make a difference, from small but powerful apps to Enterprise level apps, I'm all in.",
+    "p2": "One of my success stories dates back to my time in college, when my friends and I <strong>created a mini-startup called SmartEnterprise.</strong> We collaborated with several local stores to improve their user experience and boost their sales.",
+    "p3": "Through SmartEnterprise and other projects, I've gained <strong>extensive experience working in teams across a variety of applications</strong>, always striving to deliver top-quality results and be a strong team player."
+  },
+  "footer": {
+    "aboutMe": "About me",
+    "contactMe": "Contact me"
+  },
+  "experienceItem": {
+    "more": "More"
+  },
+  "meta": {
+    "title": "Portfolio FerDevCraft - Systems Engineer",
+    "description": "Hire FerDevCraft to make your app"
+  }
+}

@@ -106,6 +106,8 @@ const PROJECTS = [
   //tags: [TAGS.GOLANG, TAGS.REACT, TAGS.TAILWIND, TAGS.TYPESCRIPT, TAGS.POSTGRESQL, TAGS.CLOUDINARY, TAGS.GEMINI],
   //},
   {
+    titleKey: "projects.echoes.title",
+    descriptionKey: "projects.echoes.description",
     title: "Echoes - A real time chat app",
     description:
       "A Whatsapp-like app with real time features, with Cloudinary integration to handle images uploading and Socket.io integrations to handle real-time comunication",
@@ -115,6 +117,8 @@ const PROJECTS = [
     github: "https://github.com/Zheng5005/Echoes"
   },
   {
+  titleKey: "projects.blendz.title",
+  descriptionKey: "projects.blendz.description",
   title: "Blendz - A language exchange app",
   description: "An app where you can find friends and learn another language, with getStream intregration to handle chat and video calls features",
     link: "https://blendz-v0.vercel.app/",
@@ -163,7 +167,7 @@ const PROJECTS = [
 
 <div class="flex flex-col gap-y-16">
   {
-    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+    PROJECTS.map(({ image, title, description, tags, link, github, titleKey, descriptionKey }) => (
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
   <div class="w-full md:w-1/2">
     <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
@@ -172,7 +176,7 @@ const PROJECTS = [
   </div>
 
   <div class="w-full md:w-1/2 md:max-w-lg">
-    <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
+    <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100" data-i18n={titleKey}>
       {title}
     </h3>
     <div class="flex flex-wrap mt-2">
@@ -189,18 +193,18 @@ const PROJECTS = [
           ))}
       </ul>
 
-      <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
+      <div class="mt-2 text-gray-700 dark:text-gray-400" data-i18n={descriptionKey}>{description}</div>
       <footer class="flex items-end justify-start mt-4 gap-x-4">
           {github && (
             <LinkButton href={github}>
               <GitHub class="size-6" />
-              Code
+              <span data-i18n="projectActions.code">Code</span>
             </LinkButton>
           )}
           {link && (
             <LinkButton href={link}>
               <Link class="size-4" />
-              Preview
+              <span data-i18n="projectActions.preview">Preview</span>
             </LinkButton>
           )}
         </footer>
