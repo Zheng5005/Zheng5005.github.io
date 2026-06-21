@@ -31,6 +31,14 @@
     "blendz": {
       "title": "Blendz - A language exchange app",
       "description": "An app where you can find friends and learn another language, with getStream intregration to handle chat and video calls features"
+    },
+    "codereview": {
+        "title": "CodeReview - An AI reviewer for your PRs",
+        "description": "An app where you can use GEMINI as a reviewer for your PRs, classifying them in different priorities"
+    },
+    "omnicli": {
+        "title": "OmniCLI - An AI agent for your terminal",
+        "description": "An AI agent for your terminal, based on Claude Code and OpenCode."
     }
   },
   "projectActions": {

@@ -31,6 +31,14 @@
     "blendz": {
       "title": "Blendz - Un'app di scambio linguistico",
       "description": "Un'app dove puoi trovare amici e imparare un'altra lingua, con integrazione getStream per funzionalità di chat e videochiamate"
+    },
+      "codereview": {
+        "title": "CodeReview - Un sistema di revisione basato sull'intelligenza artificiale per le tue PR",
+        "description": "Un'app che permette di utilizzare GEMINI come strumento di revisione per le pubbliche relazioni dei vostri progetti, classificando le riunioni in base a diverse priorità."
+    },
+    "omnicli": {
+        "title": "OmniCLI - Un agente di intelligenza artificiale per il tuo terminale",
+        "description": "Un agente di intelligenza artificiale sul tuo terminale, basato su Claude Code e OpenCode."
     }
   },
   "projectActions": {

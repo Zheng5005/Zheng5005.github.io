@@ -15,6 +15,12 @@ import SocketIO from "./icons/SocketIO.astro"
 import DaisyUI from "./icons/DaisyUI.astro"
 import JWT from "./icons/JWT.astro"
 import Next from "./icons/Next.astro"
+import Gemini from "./icons/Gemini.astro"
+import Prisma from "./icons/Prisma.astro"
+import tRPC from "./icons/tRPC.astro"
+import shadcn from "./icons/shadcn.astro"
+import Inngest from "./icons/Inngest.astro"
+import BetterAuth from "./icons/BetterAuth.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 
@@ -94,27 +100,57 @@ const TAGS = {
     class: "bg-white text-black dark:bg-black dark:text-white",
     icon: Next,
   },
+  GEMINI: {
+    name: "Gemini",
+    class: "bg-white text-black dark:bg-black dark:text-white",
+    icon: Gemini,
+  },
+  Prisma: {
+    name: "Prisma",
+    class: "bg-dark text-black dark:bg-black dark:text-white",
+    icon: Prisma,
+  },
+  tRPC: {
+    name: "tRPC",
+    class: "bg-white text-black dark:bg-black dark:text-white",
+    icon: tRPC,
+  },
+  Inngest: {
+    name: "Inngest",
+    class: "bg-white text-black dark:bg-black dark:text-white",
+    icon: Inngest,
+  },
+  shadcn: {
+    name: "Shadcn",
+    class: "bg-white text-black dark:bg-black dark:text-white",
+    icon: shadcn,
+  },
+  BetterAuth: {
+    name: "BetterAuth",
+    class: "bg-white text-black dark:bg-black dark:text-white",
+    icon: BetterAuth,
+  },
 }
 const PROJECTS = [
-  //{
-  //title: "BiteBox - Find your next favorite recipe here!",
-  //description:
-  //"A web app where you can upload your recipes and get feedback, in the form of rating and commnets from other users, with a recommendation algorithm implementation",
-  //link: "as",
-  //github: "https://github.com/Zheng5005/BiteBox",
-  //image: "/projects/svgl.webp",
-  //tags: [TAGS.GOLANG, TAGS.REACT, TAGS.TAILWIND, TAGS.TYPESCRIPT, TAGS.POSTGRESQL, TAGS.CLOUDINARY, TAGS.GEMINI],
-  //},
   {
-    titleKey: "projects.echoes.title",
-    descriptionKey: "projects.echoes.description",
-    title: "Echoes - A real time chat app",
-    description:
-      "A Whatsapp-like app with real time features, with Cloudinary integration to handle images uploading and Socket.io integrations to handle real-time comunication",
-    link: "https://echoes-ekfs.onrender.com",
-    image: "/projects/Echoes.png",
-    tags: [TAGS.MONGODB, TAGS.JAVASCRIPT, TAGS.EXPRESJS, TAGS.REACT, TAGS.NODEJS, TAGS.TAILWIND, TAGS.CLOUDINARY, TAGS.SOCKETIO, TAGS.JWT],
-    github: "https://github.com/Zheng5005/Echoes"
+  titleKey: "projects.omnicli.title",
+  descriptionKey: "projects.omnicli.description",
+  title: "OmniCLI - An AI agent for your terminal",
+  description: "An AI agent for your terminal, based on Claude Code and OpenCode.",
+    link: "https://code-reviewer-lemon-phi.vercel.app/",
+    image: "/projects/OmniCLI.png",
+    tags: [TAGS.GOLANG, TAGS.GEMINI],
+  github: "https://github.com/Zheng5005/OmniCLI"
+  },
+  {
+  titleKey: "projects.codereview.title",
+  descriptionKey: "projects.codereview.description",
+  title: "CodeReview - An AI reviewer for yours PR",
+  description: "An app where you can use GEMINI as a reviewer for your PRs, classifying them in different priorities",
+    link: "https://code-reviewer-lemon-phi.vercel.app/",
+    image: "/projects/Codereviewer.jpeg",
+    tags: [TAGS.NEXT, TAGS.TYPESCRIPT, TAGS.POSTGRESQL, TAGS.GEMINI, TAGS.Prisma, TAGS.tRPC, TAGS.Inngest, TAGS.shadcn, TAGS.BetterAuth],
+  github: "https://github.com/Zheng5005/code_reviewer"
   },
   {
   titleKey: "projects.blendz.title",
@@ -126,42 +162,17 @@ const PROJECTS = [
   tags: [TAGS.GOLANG, TAGS.REACT, TAGS.TYPESCRIPT, TAGS.MONGODB, TAGS.TAILWIND, TAGS.DAISUI, TAGS.JWT],
   github: "https://github.com/Zheng5005/Blendz_v0"
   },
-  //{
-  //title: "AIReview - An AI reviewer for your repos",
-  //description:
-  //"",
-  //link: "",
-  //github: "https://github.com/Zheng5005/code_reviewer",
-  //image: "",
-  //tags: [TAGS.NEXT, TAGS.SHADCN, TAGS.TYPESCRIPT, TAGS.POSTGRESQL, TAGS.GEMINI, TAGS.PRISMA, TAGS.BETTER_AUTH, TAGS.tRPC],
-  //},
-  //{
-  //title: "AI agent - An AI agent for your terminal",
-  //description:
-  //"",
-  //link: "",
-  //github: "",
-  //image: "",
-  //tags: [TAGS.GEMINI, TAGS.GOLANG],
-  //},
-  //{
-  //title: "Search Engine",
-  //description:
-  //"",
-  //link: "",
-  //github: "",
-  //image: "",
-  //tags: [TAGS.GEMINI, TAGS.GOLANG],
-  //},
-  //{
-  //title: "NotedUp",
-  //description:
-  //"",
-  //link: "",
-  //github: "",
-  //image: "",
-  //tags: [TAGS.GEMINI, TAGS.GOLANG, TAGS.REACT, TAGS.REACT_NATIVE, TAGS.POSTGRESQL],
-  //},
+  {
+    titleKey: "projects.echoes.title",
+    descriptionKey: "projects.echoes.description",
+    title: "Echoes - A real time chat app",
+    description:
+      "A Whatsapp-like app with real time features, with Cloudinary integration to handle images uploading and Socket.io integrations to handle real-time comunication",
+    link: "https://echoes-ekfs.onrender.com",
+    image: "/projects/Echoes.png",
+    tags: [TAGS.MONGODB, TAGS.JAVASCRIPT, TAGS.EXPRESJS, TAGS.REACT, TAGS.NODEJS, TAGS.TAILWIND, TAGS.CLOUDINARY, TAGS.SOCKETIO, TAGS.JWT],
+    github: "https://github.com/Zheng5005/Echoes"
+  },
 ]
 ---
 

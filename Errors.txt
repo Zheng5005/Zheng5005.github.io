@@ -1,0 +1,14 @@
+Error: Cannot read properties of undefined (reading 'class')
+components/Projects.astro:198:65
+
+TypeError: Cannot read properties of undefined (reading 'class')
+    at /home/zheng005/Documents/Zheng5005.github.io/src/components/Projects.astro:198:65
+    at Array.map (<anonymous>)
+    at /home/zheng005/Documents/Zheng5005.github.io/src/components/Projects.astro:195:17
+    at Array.map (<anonymous>)
+    at /home/zheng005/Documents/Zheng5005.github.io/src/components/Projects.astro:181:9
+    at AstroComponentInstance.Projects [as factory] (/home/zheng005/Documents/Zheng5005.github.io/node_modules/.pnpm/astro@4.4.5_typescript@5.3.3/node_modules/astro/dist/runtime/server/astro-component.js:18:12)
+    at AstroComponentInstance.init (/home/zheng005/Documents/Zheng5005.github.io/node_modules/.pnpm/astro@4.4.5_typescript@5.3.3/node_modules/astro/dist/runtime/server/render/astro/instance.js:33:29)
+    at AstroComponentInstance.render (/home/zheng005/Documents/Zheng5005.github.io/node_modules/.pnpm/astro@4.4.5_typescript@5.3.3/node_modules/astro/dist/runtime/server/render/astro/instance.js:38:18)
+    at Object.render (/home/zheng005/Documents/Zheng5005.github.io/node_modules/.pnpm/astro@4.4.5_typescript@5.3.3/node_modules/astro/dist/runtime/server/render/component.js:343:22)
+    at Module.renderChild (/home/zheng005/Documents/Zheng5005.github.io/node_modules/.pnpm/astro@4.4.5_typescript@5.3.3/node_modules/astro/dist/runtime/server/render/any.js:29:17)
