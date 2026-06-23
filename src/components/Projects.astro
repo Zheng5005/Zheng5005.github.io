@@ -21,6 +21,8 @@ import tRPC from "./icons/tRPC.astro"
 import shadcn from "./icons/shadcn.astro"
 import Inngest from "./icons/Inngest.astro"
 import BetterAuth from "./icons/BetterAuth.astro"
+import Csharp from "./icons/Csharp.astro"
+import NET from "./icons/NET.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 
@@ -130,6 +132,16 @@ const TAGS = {
     class: "bg-white text-black dark:bg-black dark:text-white",
     icon: BetterAuth,
   },
+  CSHARP: { 
+    name: "C#",
+    class: "bg-white text-black dark:bg-[#2d144f] dark:text-white",
+    icon: Csharp,
+  },
+  NET: { 
+    name: ".NET",
+    class: "bg-white text-black dark:bg-[#2d144f] dark:text-white",
+    icon: NET,
+  }
 }
 const PROJECTS = [
   {
@@ -169,7 +181,7 @@ const PROJECTS = [
       "A Whatsapp-like app with real time features, with Cloudinary integration to handle images uploading and Socket.io integrations to handle real-time comunication",
     link: "https://echoes-ekfs.onrender.com",
     image: "/projects/Echoes.png",
-    tags: [TAGS.MONGODB, TAGS.JAVASCRIPT, TAGS.EXPRESJS, TAGS.REACT, TAGS.NODEJS, TAGS.TAILWIND, TAGS.CLOUDINARY, TAGS.SOCKETIO, TAGS.JWT],
+    tags: [TAGS.MONGODB, TAGS.JAVASCRIPT, TAGS.EXPRESJS, TAGS.CSHARP, TAGS.NET, TAGS.REACT, TAGS.NODEJS, TAGS.TAILWIND, TAGS.CLOUDINARY, TAGS.SOCKETIO, TAGS.JWT],
     github: "https://github.com/Zheng5005/Echoes"
   },
 ]
